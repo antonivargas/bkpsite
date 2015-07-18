@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Social SEO responsive landing page with facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="cfconsultancy">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+	<a class="brand" href="../index.html">Social SEO responsive landing page with facebook content</a> <!-- TIP: Change this for the name of your file -->
+     	<div class="nav-collapse">
+        <ul class="nav">
+              <li><a href="#top" class="active">Top</a></li>
+              <li><a href="#setup">Setup</a></li>
+              <li><a href="#notes">Notes</a></li>
+              <li><a href="#styles">Styles</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+              <li><a href="#credits">Credits</a></li>
+          </ul>
+</div>
+	</div>
+		</div>
+			</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->
+
+<div class="container">
+
+	<div class="masthead">
+	    <h1>Social SEO responsive landing page facebook documentation</h1>
+	    <p>A one page SEO responsive solution for a small business or event website based on facebook data with twitter , youtube and Bootstrap</p>
+        <p>All the data printed comes from facebook (graph API json), twitter (widget) and youtube (playlist player). Also included a lang file so you can easy change the language to your needs.</p>
+        <p>This app comes with my <a href="http://www.cfcms.nl/youtube-responsive/documentation/index.html">youtube responsive playlist player</a> ! and colors for the headers and links are automatic set based on the cover image</p>
+        <p>For a <b>demo</b> visit <a href="../index.php">this page</a> and resize your browser. You will see the responsive effect.</p>
+        <p>You can use a wall with mansory effect or just a feed output
+	    <p class="download-info"> <a href="../index.php" class="btn btn-primary btn-large">DEMO</a></p>
+	    <p class="download-info"> <a href="http://codecanyon.net/item/social-seo-responsive-landing-page-facebook/6498127?ref=ceasar" class="btn btn-primary btn-large">Item Support</a></p>
+	    <p class="download-info"> <a href="http://codecanyon.net/item/social-seo-responsive-landing-page-facebook/6498127?ref=ceasar" class="btn btn-primary btn-large">Download</a></p>
+	</div> <!-- masthead -->
+
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing the Social SEO responsive landing page. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/ceasar">here</a>. Thanks so much!</p>
+  </div> <!-- intro -->
+
+<section id="setup">
+	<div class="page-header">
+	  <h1>Setup <small>Setup, customization</small></h1>
+	</div>
+
+    <div class="row">
+      <div class="span3">
+        <h3>General Setup</h3>
+        <p>Here is the general structure.</p>
+      </div>
+
+<div class="span9">
+<p>Upload the dir bootstrap, cache, php and the index.php to the root of your domain</p>
+<p>Give the dir cache rights to write to (chmod)</p>
+<p>Now open /php/config.php in your editor and look at the following options</p>
+<p>For the $tokenID and $tokenSECRET you need to make an app at the facebook dev site. Look at this video to get one ( <a href="http://www.youtube.com/watch?v=HIf0JW7JhcE">video</a> ) and go to the <a href="https://developers.facebook.com/">https://developers.facebook.com/</a> website
+<p>You also need a twitter username and id. You can get this at the settings account page. <a href="https://twitter.com/settings/account">https://twitter.com/settings/account</a>
+<br />Now create a new widget with a valid twitter username. Then in the copy and paste box you see the <b>data-widget-id</b>.
+<br />Use that value and set it here $twitterwidgetid</p>
+<p>If you are testing set the $cachetime to 1 for example</p>
+<p>For any locale setting check <a href="https://developers.facebook.com/docs/internationalization/">internationalization</a>
+<br />Default available dutch and English
+</p>
+<pre class="prettyprint linenums">
+/**
+ * config settings.
+ */
+//username
+$user = 'australiapost';
+//language nl_NL, de_DE, fr_FR or en_EN
+$lang = 'en_EN';
+//Facebook APP id | and App Secret
+$tokenID = 'HERE THE APP ID';
+$tokenSECRET= 'HERE THE APP SECRET';
+//cache time in seconds
+$cachetime = '21600';
+//resize cover photo
+$resizecover = true;
+//show albums true or false
+//$showalbums - If true only the albums will be fetched with a link to the facebook album
+$showalbums = false;
+$limitalbums = '7';
+//Exclude albums
+$excludealbums = array('Cover Photos','Profile Pictures','Omslagfoto\'s','Profielfoto\'s');
+//show events true or false
+$showevents = true;
+//auto color from image for H1 end links
+$autocolor = true;
+//total feeds
+$feeditems = '30';
+//type feed or posts
+$newstype = 'posts';
+//news output 'wall' or 'feed'. wall is masonry colums
+$newsoutput = 'wall';
+//Filter only posts if it contains text (so no status updates)
+$newsfilter = true;
+//show max post (only for feed output
+$maxposts = '3';
+//show images on posts
+$wallimages = true;
+//higher resolution images ? (slower for website)
+$high_picture = true;
+//Show comments
+$showcomments = true;
+//show max comments
+$totalcomments = '10';
+//full post columns if the twitter and pinterest widgets are set to false
+$nowidgets = false;
+
+//Youtube
+$youtube = true;
+//listType youtube - playlist, user_uploads, custom or search (the default)
+$youtubetype = 'user_uploads';
+//value youtube
+$youtubevalue = 'auspost';
+
+//Video's facebook (on mobile it will be the mp4 link else flash object)
+$facebookvideo = true;
+//Max video's
+$limitvideo = '12';
+
+//twitter
+$twitter = true;
+$twittername = 'auspost';
+$twitterwidgetid = '417268230936219648';
+
+//Pinterest
+$pinterest = false;
+//Name EX 'name' or add your board. EX. 'name/boardname'
+$pinterestname= '';
+//User (embedBoard) or board (embedUser) ?
+$pinterestuser = 'embedUser';
+
+//show output in array
+$debugjson = false;
+
+/**
+ * Set cache to 0 for testing.
+ */
+if(isset($_GET['cache']) && $_GET['cache'] == 'false') {
+	$cachetime = '0';
+}
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Customizations</h3>
+  <p>Since it is plain and simple you can adjust almost everything</p>
+</div>
+
+<div class="span9">
+<p>In /php/funtions.php you can find the call to the facebook api
+<pre class="prettyprint linenums">
+$url = 'https://graph.facebook.com/v2.0/'.$user.'?fields='.$albums.'about,'.$events.'hours,'.$fvideo.'username,website,company_overview,phone,description,mission,location,name,likes,category_list,picture,category,parking,cover,'.$newstype.'.limit('.$feeditems.').fields('.$fcomments.'name,description,message,type,link,caption,id,created_time,full_picture,picture,status_type,story,likes.limit(1).summary(true))&locale='.$lang.'&access_token='.$tokenID.'|'.$tokenSECRET;
+</pre>
+<p>If you set $debugjson to true you can see the json output on screen and see all the values</p>
+<p>If you want to grab other json fields you can find them here <a href="https://developers.facebook.com/tools/explorer/">https://developers.facebook.com/tools/explorer/</a>
+<br />and add them to the string above
+</p>
+<p>Opening the index.php and you will see how the feed is outputted, so you can easily add more fields</p>
+<p><b>example</b></p>
+<pre class="prettyprint linenums">
+$events = $profile['events']['data'];
+if (isset($events)) {
+  foreach($events as $event){
+    echo '&lt;h3&gt;'.$event['name'].'&lt;/h3&gt;';
+    echo '&lt;strong&gt;'.convertIETF($event['start_time']).'&lt;/strong&gt;&lt;br /&gt;';
+    if (isset($event['location'])) {
+        echo $event['location'].'&lt;br /&gt;';
+    }
+    if (isset($event['description'])) {
+        echo hyperlinks($event['description']).'&lt;br /&gt;';
+    }
+    echo '&lt;a href=&quot;https://www.facebook.com/events/'.$event['id'].'/&quot; target=&quot;_blank&quot;&gt;'.$lmore.' ...&lt;/a&gt;';
+  }
+}
+</pre>
+<p>
+For example if you want the image from a post (this is an foreach , since there is more then one post) just look at the json (set $debugjson to true)
+</p>
+<pre class="prettyprint linenums">
+[posts] => Array
+(
+  [data] => Array
+      (
+      [0] => Array
+        (
+            [message] => The street is the final word in fashion.4
+            [id] => 42933792278_10152086130762279
+            [picture] => http://photos-f.ak.fbcdn.net/hphotos-ak-ash4/1463233_10152086130692279_633614305_s.jpg
+            [created_time] => 2013-12-30T19:00:29+0000
+        )
+      [1] => Array
+</pre>
+<p>
+you can grab it like this in the foreach
+</p>
+<pre class="prettyprint linenums">
+echo $feed['picture']
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+  </section> <!-- Markup -->
+
+<section id="notes">
+    <div class="page-header">
+       <h1>Notes</h1>
+     </div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Notes</h3>
+
+</div>
+<div class="span9">
+<p>Timthumb is used to resize the cover photo. You can find the thumb.php in the dir /php/
+<br />You can set in the thumb.php several settings including the cache dir. Default is blank (Directory where images are cached. Left blank it will use the system temporary directory (which is better for security))
+<br />In the config you can set this to false if you want the original cover photo. The default resize is <b>&zc=1&w=850&h=315</b> and can be found on line 127 in the index.php
+<br />You can set this to a bigger size to fit the website container but then you also need to upload a bigger cover photo on facebook
+</p>
+<p>All the content comes from facebook so you have to make sure that most of the settings in your facebook are set
+</p>
+<p>When it looks like the content is not okay set $debugjson to true to see all the values or go to <a href="https://developers.facebook.com/tools/explorer/">https://developers.facebook.com/tools/explorer/</a> and check if there are no problems on the facebook site.
+</p>
+<p>Note, that this only works with <b>business and event pages</b>
+<br />If you are not sure if this works with your facebook page <b>just test it</b> out here first <a href="https://developers.facebook.com/tools/explorer/">https://developers.facebook.com/tools/explorer/</a>
+</p>
+<p>I kept everything really simple so you can change almost everything to your own needs. However some php, html and css knowledge is necessary.
+</p>
+      </div>
+        </div>
+    <hr />
+  </section>
+      <!-- Styles -->
+
+
+<section id="styles">
+    <div class="page-header">
+       <h1>Styles</h1>
+     </div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Style sheet</h3>
+  <p>There are severall stylesheets for you to customize</p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>style.css</code></td>
+                  <td>Overall style sheet for your custom needs</td>
+                </tr>
+            <tr>
+                  <td><code>youtube-responsive.css</code></td>
+                  <td>Customize the youtube player</td>
+                </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+    <hr />
+  </section>
+      <!-- Styles -->
+
+      <section id="javascript">
+	<div class="page-header">
+	  <h1>JavaScript</h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <h3>JavaScript Files</h3>
+	    <p>You will find severall js at the bottom of the index.php</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Tag</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>settings.js</code></td>
+	          <td>Some common settings.</td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery.youtube-responsive.min.js</code></td>
+	          <td>The js code for the responsive youtube player. You can find all the documentation about this plugin <a href="http://www.cfcms.nl/youtube-responsive/documentation/index.html">here</a></td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+	<hr />
+  </section><!-- JavaScript -->
+
+	<section id="credits">
+	  <div class="page-header">
+	    <h1>Credits Files</h1>
+	  </div>
+	  <p>I've used the following files as listed.</p>
+	  <h3>JavaScript,php and API</h3>
+	  <ol>
+	    <li><a href="http://jquery.com/">jQuery</a></li>
+	    <li><a href="http://masonry.desandro.com/">masonry.js</a></li>
+	    <li><a href="http://www.appelsiini.net/projects/lazyload">jquery.lazyload</a></li>
+	    <li><a href="http://getbootstrap.com/">bootstrap.js</a></li>
+	    <li><a href="https://github.com/jawinn/Hide-Max-List-Items-Expander-jQuery-Plugin">hideMaxListItem-min.js</a></li>
+	    <li><a href="http://plugins.learningjquery.com/expander/">jquery.expander.min.js</a></li>
+	    <li><a href="https://developers.facebook.com">Graph API facebook</a></li>
+	    <li><a href="http://code.google.com/p/timthumb/">Timthumb</a></li>
+	    <li><a href="http://www.addthis.com/">Addthis social plugin</a></li>
+	    <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup is a responsive lightbox</a></li>
+	  </ol>
+	</section><!-- Credits -->
+
+      <hr />
+
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this app. As I said at the beginning, I'd be glad to help you if you have any questions relating to this app. No guarantees, but I'll do my best to assist.</p>
+    <p>Ceasar</p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; CFconsultancy 2014</p>
+</footer>
+
+</div><!-- /container -->
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-alert.js"></script>
+<script src="assets/js/bootstrap-modal.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script>
+<script src="assets/js/bootstrap-scrollspy.js"></script>
+<script src="assets/js/bootstrap-tab.js"></script>
+<script src="assets/js/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
