@@ -1,0 +1,625 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>T2 Club</title>
+<meta charset="utf-8" />
+<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="web/js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="web/js/move-top.js"></script>
+<script type="text/javascript" src="web/js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+ <!-- Custom Theme files -->
+<link href="web/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!----//End-top-nav-script---->
+</head>
+<body>
+		<!-----start-container---->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><img src="web/images/logo.png" title="logo" /></a>
+					</div>
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Home</a></li>
+							<li class="page-scroll"><a href="#features" class="scroll">T2 Club</a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">Equipe</a></li>
+							<li class="page-scroll"><a href="#gallery" class="scroll">Galeria</a></li>
+							<li class="page-scroll"><a href="#pricing" class="scroll">Planos</a></li>
+							<li class="page-scroll"><a href="#partner" class="scroll">Parceiros</a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">contato</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="web/images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+					<div class="contact-info">
+						<p><span><label> </label></span>(47) 3380-1444 | 9944-0504</p>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----start-slider-script---->
+			<script src="web/js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 900,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="web/images/slide3.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          		<span>A melhor estrutura para treinamento</span>
+			          		<h1>DE ALTA INTENSIDADE</h1>
+			          		<label>da região do vale europeu</label>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="web/images/slide2.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          		<span>Aproveite nossas opções</span>
+			          		<h1>de PLANOS promocionais</h1>
+			          		<label>até 20 de Fevereiro</label>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="web/images/slide1.jpg" alt="">
+			           <div class="caption">
+			           	<div class="slide-text-info">
+			          		<span>Os melhores aparelhos</span>
+			          		<h1>PARA AS MODALIDADES</h1>
+			          		<label>Aeróbica, Step e Jump</label>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!-----start-fearures---->
+			<div class="features" id="features">
+		
+				<div class="container">
+					<div class="features-head text-center">
+						<h2>Bem vindo à<span> T2 Club!</span></h2>
+						<p>Conheça um pouco das modalidades que você encontrará a sua disposição aqui na T2 Club.</p>
+					</div>
+					<div class="feature-grids">						
+						<div class="col-md-6 feature-grid">
+							<center><h3><!-- <span class="fea-icon2"></span> -->MUSCULAÇÃO</h3></center>
+							<p>Para quem deseja fazer musculação encontrará aparelhagem de ponta para exercícios sincronizados com pesos e acompanhamento de um personal trainer especializado em cada modalidade de exercícios para melhor resultado do seu treino.</p>
+						</div>
+						<div class="col-md-6 feature-grid">
+							<center><h3><!-- <span class="fea-icon1"></span> -->SPINNING</h3></center>
+							<p>Aqui na T2 temos aulas de Spinning para condicionamento cardiorrespiratório realizada em grupo em bicicletas da SCHIWINN‬, com variação de  velocidade e carga, realizadas todas às segundas e quartas das 19:00 às 20:00 e terças e quintas das 20:00 às 21:00.</p>
+						</div><br>
+						<div class="col-md-12 feature-grid">							
+							<center>
+								<div class="features-head text-center"><br>
+									<strong><p class="p-unique">Fique ligado! Em breve estaremos começando a ministrar aulas em novas modalidades de ginástica, teremos disponíveis aulas de Aeróbica, Step e Jump.</p></strong>
+								</div>
+							</center>
+						</div>						
+						<!-- <div class="col-md-6 feature-grid">
+							<h3><span class="fea-icon4"></span>MIND & BODY</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div> -->
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			
+			</div>
+			<!-----//End-fearures---->
+
+			<!-----start-team---->
+			<div class="team" id="team">
+				<div class="container">
+					<div class="team-head text-center">
+						<h3>EQUIPE T2</h3>
+						<span> </span>
+					</div>					
+					<div class="team-grids">
+						<div class="col-md-3"></div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member1.jpg" />
+						     <div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>SABRINE SCHRULL</h3>
+						     				<span>Recepcionista</span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						</div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member2.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>ADRIANO GESSER</h3>
+						     				<span>Gerente / Personal Trainer</span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						</div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member3.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3><TABLE>TONY TOMELIN</TABLE></h3>
+						     				<span>Administrador</span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						<!-- </div>						 -->
+						<div class="col-md-3"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+									
+					<div class="team-grids">
+						<div class="col-md-3"></div>
+						<!-- <div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member6.jpg" />
+						     <div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>GISELE BRODWOLF</h3>
+						     				<span>Nutricionista</span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						</div> -->
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member4.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>FERNANDA ROSSI</h3>
+						     				<span>Recepcionista</span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						</div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member6.jpg" />
+						     <div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>GISELE BRODWOLF</h3>
+						     				<span>Nutricionista</span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						</div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member7.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>PATRÍZIO DALFOVO</h3>
+						     				<span>Instrutor  / Personal Trainer </span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>						  	
+						</div>						
+						<div class="col-md-3"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="team-grids">
+						<div class="col-md-3"></div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member8.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>DANIEL SPEZZIA</h3>
+						     				<span>Instrutor  / Personal Trainer </span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	
+						</div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member9.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>MARCEL ALBUQUERQUE</h3>
+						     				<span>Instrutor  / Personal Trainer </span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	
+						</div>
+						<div class="col-md-2 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="web/images/member10.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>ANDRESSA SCHURT</h3>
+						     				<span>Instrutor  / Personal Trainer </span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-team---->
+
+			<!-----start-gallery---->
+			<div class="gallery" id="gallery">
+				<div class="container">
+					<div class="gallery-head text-center">
+						<h3>Galeria</h3><span> </span>
+						<p>Confira em nossa galeria algumas fotos da estrutura que lhe aguarda aqui na T2 Club.</p>
+					</div>
+					<div class="gallery-grids">
+						<!--files-rquired-for-image-hover-effects-->
+						<link rel="stylesheet" type="text/css" href="web/css/component.css" />
+						<script src="web/js/modernizr.custom.js"></script>
+						<script src="web/js/toucheffects.js"></script>
+						<!--//files-rquired-for-image-hover-effects-->
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g1.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g2.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g3.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g4.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g5.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g8.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g6.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g7.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="col-md-4 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="web/images/g9.jpg" alt="img02">
+								
+							</figure>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-//End-gallery-->
+			<!--start-pricing-plans-->
+			<div class="pricing-plans" id="pricing">
+				<div class="container">
+					<div class="pricing-plans-head text-center">
+						<h3>Planos</h3><span> </span>
+					</div>
+					<div class="pricing-plan-grids">
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-12 pricing-plan-grid-left text-center">
+								<span class="p-icon5"> </span>
+								<h4>Plano Mensal</h4>
+								<p>R$110<label>,00</label></p>
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-12 pricing-plan-grid-left text-center">
+								<span class="p-icon5"> </span>
+								<h4>Plano Semestral</h4>
+								<p>R$99<label>,90</label></p>
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-12 pricing-plan-grid-left text-center">
+								<span class="p-icon5"> </span>
+								<h4>Plano Anual</h4>
+								<p>R$89<label>,90</label></p>
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+
+				<div class="container">
+					
+					<div class="pricing-plan-grids">
+						<div class="col-md-6">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-6 pricing-plan-grid-left text-center">
+								<span class="p-icon5"> </span>
+								<h4>Plano Empresarial</h4>
+								<p>R$85<label>,00</label></p>
+							</div>
+							<div class="col-md-6 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">Mínimo de 10 alunos</a></li>
+									<li><span> </span><a href="#">Com as mesmas vantagens dos demais planos</a></li>
+									
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						
+						<div class="col-md-6">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-6 pricing-plan-grid-left text-center">
+								<span class="p-icon5"> </span>
+								<h4>Horários Reduzidos</h4>
+								<p>R$85<label>,00</label></p>
+							</div>
+							<div class="col-md-6 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">Horário de Segunda à Sexta</a></li>
+									<li><span> </span><a href="#">06:00 da manhã até 16:00 da tarde</a></li>
+									<li><span> </span><a href="#">Horário aos Sábados</a></li>
+									<li><span> </span><a href="#">07:30 até às 11:30 da manhã</a></li>									
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-pricing-plans---->
+		<!-----//End-container---->
+	        <div class="gallery" id="partner">
+				<div class="container">
+					<div class="gallery-head text-center">
+					  <h3>Parceiros</h3><span> </span>
+					</div>
+					<ul id="flexiselDemo3">						
+						<li><img src="web/images/c3.png" /></li>
+						<li><img src="web/images/c4.png" /></li>
+						<li><img src="web/images/c5.png" /></li>						
+					</ul>
+					<script type="text/javascript">
+					$(window).load(function() {
+						$("#flexiselDemo3").flexisel({
+							visibleItems: 5,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+					    	responsiveBreakpoints: { 
+					    		portrait: { 
+					    			changePoint:480,
+					    			visibleItems: 1
+					    		}, 
+					    		landscape: { 
+					    			changePoint:640,
+					    			visibleItems: 2
+					    		},
+					    		tablet: { 
+					    			changePoint:768,
+					    			visibleItems: 3
+					    		}
+					    	}
+					    });
+					    
+					});
+					</script>
+					<script type="text/javascript" src="web/js/jquery.flexisel.js"></script>
+				</div>
+			</div>
+			
+  <div class="footer">
+  	<div class="container">
+	   <div class="footer-top">	 	
+			<ul class="twitter_footer">
+			 	 <li>
+			 	   <a target="blank" href="https://www.facebook.com/t2clubsc"><i class="face_icon"></i><a/>
+			 	   <a target="blank" href="http://instagram.com/t2club"><i class="insta_icon"></i></a>
+				 </li>		 	   
+			
+		 	</ul>				
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-bottom" id="contact">
+		    <div class="container contact">
+      	  	  <div class="col-md-4 contact-top_left">
+			  	<h3>informações de contato</h3>
+			  	<p>Endereço: Avenida Getúlio Vargas, 922, Timbó - SC
+			  	<ul class="contact_info">
+			  		<li><i class="mobile"> </i><span>(47) 3380-1444</span></li>
+			  		<li><i class="message"> </i><span class="msg">contato@t2club.com.br</span></li>
+			  	</ul>
+	 		  </div>
+      		 <div class="col-md-8 contact-top">
+			  <h3>Envie sua mensagem</h3>
+			     <form method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" class="text" value="Nome" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nome';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:20px">
+					 	<input type="text" class="text" value="Assunto" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Assunto';}" style="margin-left:20px">
+					</div>
+					<div class="contact_bottom-textarea">
+	                   <textarea value="Mensagem" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem';}">Mensagem</textarea>
+	                </div>
+	                <div class="form-submit1">
+			           <input name="submit" type="submit" id="submit" value="Enviar Mensagem" /><br>
+			           <p class="m_msg">Digite um email válido</p>
+					</div>
+					<div class="clear"></div>
+                 </form>
+             </div>
+            </div>
+      	    <div class="copy">
+		       <p> Desenvolvido por <a href="http://www.dinamismoweb.com.br" target="_blank"> Dinamismo Web Soluções para Internet</a></p>
+		    </div>
+          </div>
+          <script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+		    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">topo </span></a>
+			</div>
+		</div>
+		<!----//End-footer---->
+		<!----//End-container---->  
+</body>
+</html>
+

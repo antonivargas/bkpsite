@@ -1,0 +1,411 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <title>GeoSelller App</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="web/js/jquery.min.js"></script>
+   <!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="web/js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="web/css/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="web/js/jquery.fancybox-media.js"></script>	
+	<script type="text/javascript">
+	/******** Fancy Light Box*********/
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+			
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+		});
+	</script>
+   <script type="text/javascript" src="web/js/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="web/js/jquery.mixitup.min.js"></script>    
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+			
+	});	
+ </script>
+</head>
+<body>
+        <div class="header" id="home">  	   
+	        <div class="header_top">
+	        	<div class="wrap">	      	   
+		 	     <div class="logo">
+						<a href="index.html"><img src="web/images/logo.png" alt="" /></a>
+					</div>	
+						<div class="menu">
+						  <a class="toggleMenu" href="#"><img src="web/images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="current"><a href="#home">Home</a></li>
+						    	<li><a href="#services">Usuários</a></li>
+						    	<li><a href="#about">Estabelecimentos</a></li>
+						    	<li><a href="#team">Equipe</a></li>
+						    	<!-- <li><a href="#skills">Estatísticas</a></li> -->
+						    	<!-- <li><a href="#works">Works</a></li> -->		
+								<li><a href="#contact">Contato</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="web/js/responsive-nav.js"></script>
+						</div>							
+	    		 <div class="clear"></div>
+	          </div>
+	       </div>
+	          <div class="header_desc">
+	          	<div class="wrap">	   
+	          	   <p>GeoSeller foi feito para você encontrar o estabelecimento mais
+	          	   	próximo de você que possui a melhor oferta exatamente para o produto que você está procurando.</p>	
+	          	   <div class="button"><a class="fancybox-media" href="https://www.youtube.com/watch?v=DTKxTBhouRM&rel=0">Assista o vídeo</a></div>          	
+	           </div>
+	         </div>
+	   </div>			      	
+     <div class="main">
+	 	<div class="content">	
+	 	   <!---- Services ------>
+	 		  <div class="services" id="services">
+	 		 	<div class="wrap"><br /><br />	 		 		
+							<center><img src="web/images/user.png" alt="" /></center>
+							<h2>GeoSeller para os usuários</h2>		 	    
+	 		 	      <div class="line green"><span> </span></div>
+	 		            <h4>Conheça como funciona o GeoSeller para os usuários que desejam pesquisar por ofertas e produtos próximos a sua localização.</h4>
+	 		 	             <div class="services_grids">
+							     <div class="section group">
+									<div class="grid_1_of_4 services_1_of_4">
+										 <img src="web/images/design.png" alt="" />
+										 <h3>Configure Filtros</h3>
+										 <p>Você navega pelo menu de configurações 
+										 	do GeoSeller e define seus filtros para fazer uma busca.</p>
+									</div>
+									<div class="grid_1_of_4 services_1_of_4">
+										 <img src="web/images/development.png" alt="" />
+										 <h3>Geolocalização</h3>
+										 <p>Seu dispositivo faz uma busca
+										 por geolocalização com as opções de ofertas que você procura</p>
+									</div>
+									<div class="grid_1_of_4 services_1_of_4">
+										 <img src="web/images/cupon-compra.png" alt="" />
+										  <h3>Vouchers de Ofertas</h3>
+										  <p>Você recebe ofertas de estabelecimentos próximos que atendam a sua necessidade.</p>
+									</div>
+									<div class="grid_1_of_4 services_1_of_4">
+										 <img src="web/images/usuario-vai.png" alt="" />
+										  <h3>Validando Vouchers</h3>
+										  <p>Vá até o estabelecimento que te enviou a oferta, valide seu voucher e aproveite a oferta!</p>
+									</div>
+					              </div>
+					            </div>
+					        </div>
+	 		           </div>	
+	 		            		           
+	  <!-- Team -->
+	     <!-- <div class="team" id="team">
+	 		 	<div class="wrap">
+	 		 	    <h2>Equipe GeoSeller</h2>
+	 		 	      <div class="line skyblue"><span> </span></div>
+	 		            <h4>Conheça o time do GeoSeller App.</h4>
+	 		 	             <div class="services_grids">
+							     <div class="section group">
+									<div class="grid_1_of_4 team_1_of_4">
+										 <img src="web/images/dimi-antoni.png" alt="" />
+										 <h3>Dimi Antoni</h3>
+										 <h5>CEO / Leader Projects</h5>
+										 <p>Dimi lidera o time GeoSeller responsável pelo design de produto, gerenciamento de projetos e planejamento estratégico da companhia.</p>
+									  <div class="social_networks">
+									  	 <ul>
+											<li><a href="https://www.facebook.com/dimiantoni"> <i class="facebook"> </i> </a></li>
+											<li><a href="https://twitter.com/Dimiantoni"><i class="twitter"> </i> </a></li>
+											<li><a href="http://www.linkedin.com/in/dimiantoni"><i class="inliked"> </i> </a></li>
+											<li><a href=""><i class="mail"> </i> </a></li>
+											<div class="clear"> </div>
+										 </ul>
+									  </div>
+									</div>
+									<div class="grid_1_of_4 team_1_of_4">
+										 <img src="web/images/filipe.png" alt="" />
+										 <h3>Filipe Mateus</h3>
+										 <h5>COO / Creative Programing</h5>
+										 <p>Filipe atua como Web Developer Front End, e é responsável por projetar o design de interface de todas as nossas aplicações mobile e web.</p>
+									    <div class="social_networks">
+									  	 <ul>
+											<li><a href="http://twitter.com/filipemn"><i class="twitter"> </i> </a></li>
+											<li><a href=""><i class="mail"> </i> </a></li>
+											<div class="clear"> </div>
+										 </ul>
+									  </div>
+									</div>
+									<div class="grid_1_of_4 team_1_of_4">
+										 <img src="web/images/charles.png" alt="" />
+										  <h3>Charles Gonzaga</h3>
+										  <h5>Desenvolvedor Web</h5>
+										  <p>Charles é Web Developer Back End e DBA, e é o principal programador nos projetos de implementação de software da Geoseller</p>
+									   <div class="social_networks">
+									  	 <ul>
+											<li><a href=""><i class="inliked"> </i> </a></li>
+											<li><a href=""><i class="mail"> </i> </a></li>
+											<div class="clear"> </div>
+										 </ul>
+									  </div>
+									</div>
+									<div class="grid_1_of_4 team_1_of_4">
+										 <img src="web/images/hegon.png" alt="" />
+										  <h3>Hegon Felipe</h3>
+										  <h5>CFO / Manager Finance</h5>
+										  <p>Hegon é nosso Economista e Administrador ficando responsável pelo gerenciamento de processos e pelas finanças da companhia.</p>
+									    <div class="social_networks">
+									  	 <ul>
+											<li><a href=""> <i class="inliked"> </i> </a></li>
+											<li><a href=""><i class="twitter"> </i> </a></li>
+											<li><a href=""><i class="mail"> </i> </a></li>
+											<div class="clear"> </div>
+										 </ul>
+									  </div>
+									</div>
+					              </div>
+					            </div>
+					        </div>
+	 		           </div> -->
+	         <!---- Skills    ---->
+	          <!--  <div class="Skills" id="skills">
+	 		 	<div class="wrap">
+	 		 	    <h2>Estatísticas</h2>
+	 		 	      <div class="line skyblue"><span> </span></div>
+	 		            <h4>Fatos que você com certeza não sabia!</h4>
+	 		            <h4> Checamos nosso celular em média 200 vezes por dia.</h4>
+	 		            	<div id='imagem'>
+		 		 	            <div class="services_grids">
+		 		 	             	<div id="canvas">
+								     <div class="section group">
+										<div class="grid_1_of_4 team_1_of_4">
+											<div class="circle" id="circles-1"></div>	
+											 		  
+										</div>									
+										<div class="grid_1_of_4 team_1_of_4">
+											<div class="circle" id="circles-2"></div>
+											 
+										</div>
+										
+										<div class="grid_1_of_4 team_1_of_4">
+											<div class="circle" id="circles-3"></div>
+											  										  
+										</div>
+										<div class="grid_1_of_4 team_1_of_4">		
+											<div class="circle" id="circles-4"></div>
+											  										  
+										</div>
+						              </div>
+						              </div>
+						        </div>
+					        </div>
+				</div>
+				</div> -->
+	            <!--Portfolio-->
+	            <!-- <div class="portfolio-grid" id="works">
+	 		 	  <div class="wrap">
+	 		 	    <h2>Our Portfolio</h2>
+	 		 	      <div class="line yellow"><span> </span></div>
+	 		            <h4>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</h4>
+	 		          
+						      <div class="container">
+							    <ul id="filters" class="clearfix">
+									 <li><span class="filter active" data-filter="web apps icons">All</span></li>
+									 <li><span class="filter" data-filter="web">Web</span></li>
+									 <li><span class="filter" data-filter="apps">Apps</span></li>
+									 <li><span class="filter" data-filter="icons">Icons</span></li>
+							   </ul>
+							<div id="portfoliolist">
+								    <div class="portfolio web icons" data-cat="web">
+										<div class="portfolio-wrapper">
+										  <a href="#">				
+										    <img src="web/images/portfolio_img1.png" alt=" " />
+										    <h5>Isometric Perspective Mock-Up</h5>
+										  </a>	
+										</div>
+									</div>		
+																	
+								 <div class="portfolio apps" data-cat="apps">
+										<div class="portfolio-wrapper">
+										  <a href="#">				
+										    <img src="web/images/portfolio_img2.png" alt=" " />
+										    <h5>Isometric Perspective Mock-Up</h5>
+										  </a>	
+										</div>
+									</div>		
+								 <div class="portfolio icons web" data-cat="web">
+										<div class="portfolio-wrapper">
+										  <a href="#">				
+										    <img src="web/images/portfolio_img3.png" alt=" " />
+										    <h5>Isometric Perspective Mock-Up</h5>
+										  </a>	
+										</div>
+									</div>		
+								   <div class="portfolio icons" data-cat="icons">
+										<div class="portfolio-wrapper">
+										  <a href="#">				
+										    <img src="web/images/portfolio_img4.png" alt=" " />
+										    <h5>Isometric Perspective Mock-Up</h5>
+										  </a>	
+										</div>
+									</div>		
+							   </div>
+							</div> --><!-- end container -->
+						   <!-- <div class="button green-button"><a href="#">Load more Projects</a></div>
+						 </div>
+					  </div>
+					 </div> -->
+	             <!---- About Us ------>
+	           <div class="about" id="about">
+	 		 	<div class="wrap"><br /><br />
+	 		 		<center><img src="web/images/estabelecimento.png" alt="" /></center>
+	 		 	    <h2>GeoSeller para os Estabelecimentos</h2>
+	 		 	      <div class="line rose"><span> </span></div>
+	 		            <h4>Entenda como o GeoSeller ajuda o seu estabelecimento a encontrar os clientes que estão buscando pelos produtos que você tem para oferecer.</h4>
+	 		 	                <div class="testimonials">
+							       <div class="section group">
+										<div class="listview_1_of_2 images_1_of_2">
+											<div class="listimg listimg_2_of_1">
+												  <img src="web/images/locations.png" alt="" />
+											</div>
+										    <div class="text list_2_of_1">
+												<p>Cadastre o local de seus estabelecimentos e crie suas campanhas para enviar por push aos usuários do Aplicativo GeoSeller que estão procurando pelo seu produto.</p>
+										         <!-- <h3>Chanel Iman</h3>
+										         <h5>CEO of pinterest</h5> -->
+										   </div>
+									   </div>			
+										<div class="listview_1_of_2 images_1_of_2">
+											<div class="listimg listimg_2_of_1">
+												  <img src="web/images/control-panel.png" alt="" />
+											</div>
+											<div class="text list_2_of_1">
+												  <p>Configure e edite as características de cada campanha, totalmente online e em tempo real de forma estratégica para alavancar seus resultados</p>
+												  <!-- <h3>ADRIANA LIMA</h3>
+										         <h5>Founder of Instagram</h5> -->
+											</div>
+										</div>
+									</div>
+								 </div>
+								 <div class="testimonials2">
+									<div class="section group">
+										<div class="listview_1_of_2 images_1_of_2">
+											<div class="listimg listimg_2_of_1">
+												  <img src="web/images/rocket.png" alt="" />
+											</div>
+										    <div class="text list_2_of_1">
+												<p>Faça seu marketing valer, com o GeoSeller você atinge o cliente certo, que está procurando exatamente o que você tem a oferecer.</p>
+										         <!-- <h3>ANNE HATHAWAY</h3>
+										         <h5>Lead Designer at Behance</h5> -->
+										   </div>
+									   </div>			
+										<div class="listview_1_of_2 images_1_of_2">
+											<div class="listimg listimg_2_of_1">
+												  <img src="web/images/chart.png" alt="" />
+											</div>
+											<div class="text list_2_of_1">
+												  <p>Monitore o sucesso de suas campanhas, taxas de conversão, cupons entregues, cupons validados, clientes, históricos, etc...</p>
+												  <!-- <h3>EMMA STONE</h3>
+										         <h5>Co-Founder of Shazam</h5> -->
+											</div>
+										</div>
+									</div>
+					             </div>
+					        </div>
+	 		           </div>
+	           <!--- Testimonials -->
+	            <div class="feedback" id="contact">
+	 		 	   <div class="wrap">
+	 		 	    <h2>Gostou do GeoSeller?</h2>
+	 		 	      <div class="line blue"><span> </span></div>
+	 		            <h4>Se você possui ou é responsável por um estabelecimento e gostaria de testar nossa ferramenta, ou se é um usuário e deseja testar o GeoSeller, preencha o formulário abaixo que nós entraremos em contato com você quando lançarmos a versão beta do sistema.</h4>
+	 		 	                    <form>
+	 		 	                    <div class="text-box">
+	 		 	                     <label>
+									 <input type="text" class="textbox" value="Seu Nome:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Seu Nome:';}">
+									</label>
+									<label>
+									 <input type="text" class="textbox" value="Seu Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Seu Email:';}">
+									</label>
+									<div class="clear"></div>
+									</div>
+									<textarea value="Sua Mensagem:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Sua Mensagem:';}">Sua Mensagem</textarea>
+									<input type="submit" value="Enviar">									
+									</form>
+								 
+					           </div>
+	 		           </div>
+	            
+	            
+	      </div>       	    
+      </div>
+     		<div class="copy-right">
+			<div class="wrap">
+				<p class="copy">© 2014 Copyright <a href="http://dinamismoweb.com.br" target="_blank">Dinamismo Web</a> Soluções para Internet </p>
+			</div>
+	  </div>       
+   <script src="web/js/jquery.scrollTo.js"></script>
+	<script src="web/js/jquery.nav.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+	</body>
+</html>
+
