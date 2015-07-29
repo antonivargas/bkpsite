@@ -1,0 +1,61 @@
+/*! http://responsiveslides.com v1.32 by @viljamis */
+
+ #logo{float:left;}
+ #video2{position:absolute; top:25%; left:45%;}
+ #video6{position:absolute; top:13%; left:5.1%;} 
+ #face{position:absolute;float:left;top:28%;left:9%;}
+ #twitter{position:absolute;float:left;top:30%;left:27%;}
+ #istagram{position:absolute;float:left;top:30%;left:43%;}
+ #youtube{position:absolute;float:left;top:30%;left:59%;}
+ 
+ /* posições dos sites de notícias na página 4*/
+ 
+ #quem{position:absolute;float:left;top:69.4%;left:9%;}
+ #quem2{position:absolute;float:left;top:69.8%;left:18.5%;}
+ #globo3{position:absolute;float:left;top:70.3%;left:27%;}
+ #r73{position:absolute;float:left;top:70.5%;left:35.5%;}
+ #globo2{position:absolute;float:left;top:70.5%;left:44%;}
+ #globo{position:absolute;float:left;top:70.5%;left:53%;}
+ /*#r72{position:absolute;float:left;top:70.5%;left:59%;}*/
+ #r7{position:absolute;float:left;top:70.5%;left:62%;}
+ #terra{position:absolute;float:left;top:71%;left:71%;}
+ #contigo{position:absolute;float:left;top:72.6%;left:80%;}
+ 
+  /* posições dos programas de tv na página 5*/
+  
+ #gilberto{position:absolute;float:left;top:56.5%;left:5%;}
+ #tvfama{position:absolute;float:left;top:56%;left:19%;}
+ #ratinho{position:absolute;float:left;top:56.5%;left:33%;}
+ 
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0%;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+  
