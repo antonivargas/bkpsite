@@ -1,5 +1,4 @@
 <?php
-
 	$dados = $_POST['dados_form'];
 	$textoCompleto = $dados['texto'];
 	#var_dump($textoCompleto);
@@ -25,9 +24,11 @@
 			$todasOcorrenciasUnicas[] .= $key;
 		}
 	}
-	#var_dump($todasOcorrenciasUnicas[0]);
-	#$resultado = $todasOcorrenciasUnicas[0];
-	header('Cache-Control:no-cache, must-revalidate');
-	header('Content-Type:application/json; charset=utf-8');
-	echo json_decode($todasOcorrenciasUnicas[0]);
+	var_dump($todasOcorrenciasUnicas[0]);
+	$resultado = (string)$todasOcorrenciasUnicas[0];
+	// header('Cache-Control: no-cache, must-revalidate');
+	#header('Content-Type: application/json; charset=utf-8');
+	#header('http-equiv="cache-control"Â Â  content="no-cache"');
+	echo json_decode($resultado);
+
 ?>
