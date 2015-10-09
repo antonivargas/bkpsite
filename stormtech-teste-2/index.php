@@ -37,7 +37,7 @@
 	    	url:  'processa.php',
 			data: {'dados_form' : dados_form},
 			success: function(response){
-				var mensagem = 'O primeiro caractere de ocorrência única é '+response;
+				var mensagem = 'O primeiro caractere de ocorrência única é a'+response;
 		        $('#alertaSuccess').show();
     			$("#msgBackEnd").text(mensagem);
 				$('#texto').val('');
